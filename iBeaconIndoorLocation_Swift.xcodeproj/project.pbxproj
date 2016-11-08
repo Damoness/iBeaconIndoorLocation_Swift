@@ -22,6 +22,8 @@
 		9CE3D84C1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */; };
 		9CE3D84D1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */; };
 		9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */; };
+		9CE3D8521DD201E800FAB8A5 /* DeployDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */; };
+		9CE3D8531DD201E800FAB8A5 /* DeployDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStep2ViewController.swift; sourceTree = "<group>"; };
 		9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndoorLocationStep2ViewController.xib; sourceTree = "<group>"; };
 		9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeployDeviceViewController.swift; sourceTree = "<group>"; };
+		9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeployDeviceViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				7623A3101DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib */,
 				9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */,
 				9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */,
+				9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */,
+				9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */,
 			);
 			path = iBeaconIndoorLocation_Swift;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 				76FFAC361D9A5B28005F4706 /* LaunchScreen.storyboard in Resources */,
 				76FFAC331D9A5B28005F4706 /* Assets.xcassets in Resources */,
 				76FFAC311D9A5B28005F4706 /* Main.storyboard in Resources */,
+				9CE3D8531DD201E800FAB8A5 /* DeployDeviceViewController.xib in Resources */,
 				7623A30E1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib in Resources */,
 				9CE3D84D1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib in Resources */,
 			);
@@ -295,6 +302,7 @@
 				9CE3D84C1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift in Sources */,
 				7623A3111DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift in Sources */,
 				9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */,
+				9CE3D8521DD201E800FAB8A5 /* DeployDeviceViewController.swift in Sources */,
 				7623A30D1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

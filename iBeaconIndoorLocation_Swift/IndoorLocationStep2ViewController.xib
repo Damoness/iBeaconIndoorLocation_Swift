@@ -62,9 +62,59 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4N7-6R-ekC" userLabel="squareView">
                                     <rect key="frame" x="20" y="150" width="374" height="374"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIO-CH-C0C">
+                                            <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="FvH-ec-t3f"/>
+                                                <constraint firstAttribute="height" constant="30" id="GCE-WS-uCU"/>
+                                            </constraints>
+                                            <state key="normal" title="1">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bu-H0-U4r">
+                                            <rect key="frame" x="336" y="8" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="1os-um-jMe"/>
+                                                <constraint firstAttribute="width" constant="30" id="5lq-tG-qXa"/>
+                                            </constraints>
+                                            <state key="normal" title="2">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8Y-Pa-6Sz">
+                                            <rect key="frame" x="336" y="336" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="5eC-sw-4Oe"/>
+                                                <constraint firstAttribute="height" constant="30" id="nTU-97-77Q"/>
+                                            </constraints>
+                                            <state key="normal" title="4">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC3-Ih-YzZ">
+                                            <rect key="frame" x="8" y="336" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="RCZ-sB-fZs"/>
+                                                <constraint firstAttribute="height" constant="30" id="b2U-Tk-o5V"/>
+                                            </constraints>
+                                            <state key="normal" title="3">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
+                                        <constraint firstItem="bIO-CH-C0C" firstAttribute="top" secondItem="4N7-6R-ekC" secondAttribute="top" constant="8" id="2nb-MC-81X"/>
+                                        <constraint firstItem="gC3-Ih-YzZ" firstAttribute="leading" secondItem="4N7-6R-ekC" secondAttribute="leading" constant="8" id="95J-6g-noS"/>
                                         <constraint firstAttribute="width" secondItem="4N7-6R-ekC" secondAttribute="height" multiplier="1:1" id="Ila-kg-G8l"/>
+                                        <constraint firstAttribute="trailing" secondItem="j8Y-Pa-6Sz" secondAttribute="trailing" constant="8" id="X2l-6v-1YO"/>
+                                        <constraint firstItem="1bu-H0-U4r" firstAttribute="top" secondItem="4N7-6R-ekC" secondAttribute="top" constant="8" id="dEE-4R-3nt"/>
+                                        <constraint firstItem="bIO-CH-C0C" firstAttribute="leading" secondItem="4N7-6R-ekC" secondAttribute="leading" constant="8" id="dNy-xs-5gA"/>
+                                        <constraint firstAttribute="bottom" secondItem="j8Y-Pa-6Sz" secondAttribute="bottom" constant="8" id="lOn-uH-qhP"/>
+                                        <constraint firstAttribute="bottom" secondItem="gC3-Ih-YzZ" secondAttribute="bottom" constant="8" id="ptF-nJ-KfK"/>
+                                        <constraint firstAttribute="trailing" secondItem="1bu-H0-U4r" secondAttribute="trailing" constant="8" id="vU6-Cx-zHc"/>
                                     </constraints>
                                 </view>
                             </subviews>
