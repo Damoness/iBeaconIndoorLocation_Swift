@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7623A30D1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623A30B1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift */; };
+		7623A30E1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7623A30C1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib */; };
+		7623A3111DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623A30F1DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift */; };
+		7623A3121DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7623A3101DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib */; };
 		76FFAC2C1D9A5B28005F4706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC2B1D9A5B28005F4706 /* AppDelegate.swift */; };
 		76FFAC2E1D9A5B28005F4706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC2D1D9A5B28005F4706 /* ViewController.swift */; };
 		76FFAC311D9A5B28005F4706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FFAC2F1D9A5B28005F4706 /* Main.storyboard */; };
@@ -15,6 +19,9 @@
 		76FFAC411D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC401D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftTests.swift */; };
 		76FFAC4C1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC4B1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests.swift */; };
 		76FFAC5C1D9A711C005F4706 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC5B1D9A711C005F4706 /* Item.swift */; };
+		9CE3D84C1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */; };
+		9CE3D84D1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */; };
+		9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7623A30B1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStartViewController.swift; sourceTree = "<group>"; };
+		7623A30C1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndoorLocationStartViewController.xib; sourceTree = "<group>"; };
+		7623A30F1DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStep1ViewController.swift; sourceTree = "<group>"; };
+		7623A3101DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndoorLocationStep1ViewController.xib; sourceTree = "<group>"; };
 		76FFAC281D9A5B28005F4706 /* iBeaconIndoorLocation_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconIndoorLocation_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FFAC2B1D9A5B28005F4706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FFAC2D1D9A5B28005F4706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		76FFAC4B1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconIndoorLocation_SwiftUITests.swift; sourceTree = "<group>"; };
 		76FFAC4D1D9A5B28005F4706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FFAC5B1D9A711C005F4706 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStep2ViewController.swift; sourceTree = "<group>"; };
+		9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndoorLocationStep2ViewController.xib; sourceTree = "<group>"; };
+		9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,13 @@
 				76FFAC341D9A5B28005F4706 /* LaunchScreen.storyboard */,
 				76FFAC371D9A5B28005F4706 /* Info.plist */,
 				76FFAC5B1D9A711C005F4706 /* Item.swift */,
+				9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */,
+				7623A30B1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift */,
+				7623A30C1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib */,
+				7623A30F1DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift */,
+				7623A3101DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib */,
+				9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */,
+				9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */,
 			);
 			path = iBeaconIndoorLocation_Swift;
 			sourceTree = "<group>";
@@ -238,9 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7623A3121DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib in Resources */,
 				76FFAC361D9A5B28005F4706 /* LaunchScreen.storyboard in Resources */,
 				76FFAC331D9A5B28005F4706 /* Assets.xcassets in Resources */,
 				76FFAC311D9A5B28005F4706 /* Main.storyboard in Resources */,
+				7623A30E1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib in Resources */,
+				9CE3D84D1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +292,10 @@
 				76FFAC2E1D9A5B28005F4706 /* ViewController.swift in Sources */,
 				76FFAC5C1D9A711C005F4706 /* Item.swift in Sources */,
 				76FFAC2C1D9A5B28005F4706 /* AppDelegate.swift in Sources */,
+				9CE3D84C1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift in Sources */,
+				7623A3111DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift in Sources */,
+				9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */,
+				7623A30D1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ditiy.iBeaconIndoorLocation-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -436,6 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ditiy.iBeaconIndoorLocation-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -516,6 +546,7 @@
 				76FFAC521D9A5B28005F4706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76FFAC531D9A5B28005F4706 /* Build configuration list for PBXNativeTarget "iBeaconIndoorLocation_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +555,7 @@
 				76FFAC551D9A5B28005F4706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76FFAC561D9A5B28005F4706 /* Build configuration list for PBXNativeTarget "iBeaconIndoorLocation_SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +564,7 @@
 				76FFAC581D9A5B28005F4706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
