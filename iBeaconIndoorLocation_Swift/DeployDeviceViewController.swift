@@ -12,7 +12,10 @@ import CoreLocation
 class DeployDeviceViewController: UIViewController {
 
     
+    @IBOutlet weak var showLabel: UILabel!
+    
     let locationManager = CLLocationManager()
+    var selectedBeacon:CLBeacon? //选中的Beacon设备
     
     
     override func viewDidLoad() {
@@ -21,6 +24,21 @@ class DeployDeviceViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.navigationItem.title = "配置设备"
+        
+        self.locationManager.delegate = self
+        
+        
+        
+        let uuid = UUID(uuidString: "FDA50693-A4E2-4FB1-AFCF-C6EB07647825")
+
+        
+        let regionBeacon = CLBeaconRegion(proximityUUID: uuid!, identifier: "identifier")
+        
+    
+        self.locationManager.startMonitoring(for: regionBeacon)
+        self.locationManager.startRangingBeacons(in: regionBeacon)
+        
+        
     }
     
     
@@ -35,6 +53,7 @@ class DeployDeviceViewController: UIViewController {
     }
     
     
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,4 +71,36 @@ class DeployDeviceViewController: UIViewController {
     }
     */
 
+}
+
+
+extension DeployDeviceViewController:CLLocationManagerDelegate{
+    
+
+    
+    
+    func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
+        
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
+        
+        
+        print(beacons)
+        print("\n")
+        
+        for beacon in beacons {
+            
+            if beacon.accuracy < 1 && beacon.rssi != 0{
+                
+                self.selectedBeacon = beacon
+                self.showLabel.text = "\(beacon.major)"
+            }
+            
+        }
+    }
+    
+    
+    
 }

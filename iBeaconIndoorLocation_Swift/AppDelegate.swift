@@ -20,12 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        //self.window
         
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
     
         let vc = IndoorLocationStartViewController()
+        
         
         let navVC = UINavigationController(rootViewController: vc)
         

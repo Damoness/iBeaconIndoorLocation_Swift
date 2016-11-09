@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     let CLBeaconMajor2 = 10002;
     let CLBeaconMajor3 = 10019;
     
+    
     let locationManager = CLLocationManager()
     
     var point:CGPoint  = CGPoint(x: 100, y: 100)

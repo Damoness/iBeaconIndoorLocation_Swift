@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeployDeviceViewController" customModule="iBeaconIndoorLocation_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="showLabel" destination="ryW-1n-gC6" id="l7w-Id-nOm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wAI-r7-riF">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beacon" translatesAutoresizingMaskIntoConstraints="NO" id="wAI-r7-riF">
                     <rect key="frame" x="67.5" y="80" width="240" height="120"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="7C3-ty-exJ"/>
@@ -46,9 +47,20 @@
                         <action selector="bindDeviceAction:" destination="-1" eventType="touchUpInside" id="DYp-jW-q6J"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major:10046  Minor:11049" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryW-1n-gC6">
+                    <rect key="frame" x="82" y="271" width="210" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Kw6-pH-f7A"/>
+                        <constraint firstAttribute="width" constant="210" id="uqX-qc-fat"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="ryW-1n-gC6" firstAttribute="top" secondItem="rdy-e9-2Xc" secondAttribute="bottom" constant="40" id="F4h-ii-a04"/>
                 <constraint firstAttribute="trailing" secondItem="tqJ-yo-3y0" secondAttribute="trailing" constant="40" id="Qqr-io-iMw"/>
                 <constraint firstItem="tqJ-yo-3y0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ci3-TS-6VQ"/>
                 <constraint firstItem="tqJ-yo-3y0" firstAttribute="top" secondItem="rdy-e9-2Xc" secondAttribute="bottom" constant="100" id="fg9-CV-JLk"/>
@@ -56,8 +68,12 @@
                 <constraint firstItem="rdy-e9-2Xc" firstAttribute="top" secondItem="wAI-r7-riF" secondAttribute="bottom" constant="10" id="ipe-W7-4I1"/>
                 <constraint firstItem="wAI-r7-riF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jti-HD-VXS"/>
                 <constraint firstItem="wAI-r7-riF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="nrQ-i0-BBZ"/>
+                <constraint firstItem="ryW-1n-gC6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oJM-we-A6E"/>
             </constraints>
-            <point key="canvasLocation" x="141" y="-78"/>
+            <point key="canvasLocation" x="140.5" y="-78.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="beacon" width="362" height="148"/>
+    </resources>
 </document>
