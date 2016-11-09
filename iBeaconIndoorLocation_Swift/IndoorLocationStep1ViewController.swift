@@ -16,7 +16,7 @@ class IndoorLocationStep1ViewController: BaseViewController {
         // Do any additional setup after loading the view.
         //self.navigationItem.backBarButtonItem?.title = ""
 
-        
+        self.navigationItem.title = "Step1"
     }
     
     

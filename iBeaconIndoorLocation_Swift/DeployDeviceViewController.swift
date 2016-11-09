@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import CoreLocation
 
 class DeployDeviceViewController: UIViewController {
 
+    
+    let locationManager = CLLocationManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         self.navigationItem.title = "配置设备"
+    }
+    
+    
+    
+    @IBAction func bindDeviceAction(_ sender: UIButton) {
+        
+        
+        
+        
+        
+        
     }
     
     

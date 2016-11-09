@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndoorLocationStep2ViewController" customModule="iBeaconIndoorLocation_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="buttonFour" destination="j8Y-Pa-6Sz" id="k4K-Xe-9kx"/>
+                <outlet property="buttonOne" destination="bIO-CH-C0C" id="06E-qt-g9F"/>
+                <outlet property="buttonThree" destination="gC3-Ih-YzZ" id="Suy-bC-W90"/>
+                <outlet property="buttonTwo" destination="1bu-H0-U4r" id="tdv-Ds-5Yh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
