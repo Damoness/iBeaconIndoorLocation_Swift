@@ -24,6 +24,7 @@
 		9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */; };
 		9CE3D8521DD201E800FAB8A5 /* DeployDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */; };
 		9CE3D8531DD201E800FAB8A5 /* DeployDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */; };
+		9CFB7D0A1DD46B2D00878011 /* iBeaconPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB7D091DD46B2D00878011 /* iBeaconPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeployDeviceViewController.swift; sourceTree = "<group>"; };
 		9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeployDeviceViewController.xib; sourceTree = "<group>"; };
+		9CFB7D091DD46B2D00878011 /* iBeaconPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				76FFAC321D9A5B28005F4706 /* Assets.xcassets */,
 				76FFAC341D9A5B28005F4706 /* LaunchScreen.storyboard */,
 				76FFAC371D9A5B28005F4706 /* Info.plist */,
+				9CFB7D091DD46B2D00878011 /* iBeaconPoint.swift */,
 				76FFAC5B1D9A711C005F4706 /* Item.swift */,
 				9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */,
 				7623A30B1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift */,
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFB7D0A1DD46B2D00878011 /* iBeaconPoint.swift in Sources */,
 				76FFAC2E1D9A5B28005F4706 /* ViewController.swift in Sources */,
 				76FFAC5C1D9A711C005F4706 /* Item.swift in Sources */,
 				76FFAC2C1D9A5B28005F4706 /* AppDelegate.swift in Sources */,

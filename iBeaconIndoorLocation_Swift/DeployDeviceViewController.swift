@@ -9,6 +9,15 @@
 import UIKit
 import CoreLocation
 
+
+
+protocol DeployDeviceDelegate:NSObjectProtocol {
+    
+    func  didBindDevice(beacon:CLBeacon)
+    
+}
+
+
 class DeployDeviceViewController: UIViewController {
 
     
@@ -17,6 +26,7 @@ class DeployDeviceViewController: UIViewController {
     let locationManager = CLLocationManager()
     var selectedBeacon:CLBeacon? //选中的Beacon设备
     
+    var delegate:DeployDeviceDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,12 +56,33 @@ class DeployDeviceViewController: UIViewController {
     @IBAction func bindDeviceAction(_ sender: UIButton) {
         
         
-        
+        if let beacon = self.selectedBeacon {
+            
+            if beacon.accuracy < 0.3 {
+                
+                
+                self.dismiss(animated: true, completion: nil)
+                
+                self.delegate?.didBindDevice(beacon:beacon)
+                
+                
+            }
+            
+        }
         
         
         
     }
     
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
+    
+        super.viewDidDisappear(animated)
+        
+        
+        
+    }
     
 
 
@@ -88,7 +119,6 @@ extension DeployDeviceViewController:CLLocationManagerDelegate{
         
         
         print(beacons)
-        print("\n")
         
         for beacon in beacons {
             
