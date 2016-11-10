@@ -182,17 +182,14 @@ extension IndoorLocationStep2ViewController:CLLocationManagerDelegate{
             
             if beacon.major.intValue ==  beaconMajor1{
                 
-                self.x =  beacon.accuracy
                 self.iBeaconPoint1?.distance = beacon.accuracy
                 
             }else if beacon.major.intValue == beaconMajor2{
                 
-                self.y =  beacon.accuracy
                 self.iBeaconPoint2?.distance = beacon.accuracy
                 
             }else if beacon.major.intValue == beaconMajor3{
                 
-                self.z =  beacon.accuracy
                 self.iBeaconPoint3?.distance = beacon.accuracy
                 
             }else if beacon.major.intValue == beaconMajor4{
