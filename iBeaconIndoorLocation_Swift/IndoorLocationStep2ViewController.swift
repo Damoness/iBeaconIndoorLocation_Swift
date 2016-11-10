@@ -46,9 +46,9 @@ class IndoorLocationStep2ViewController: BaseViewController,DeployDeviceDelegate
     
     var shapeLayer = CAShapeLayer()
     
-    var x:Double = 0.0
-    var y:Double = 0.0
-    var z:Double = 0.0
+//    var x:Double = 0.0
+//    var y:Double = 0.0
+//    var z:Double = 0.0
     
     let locationManager = CLLocationManager()
     
@@ -200,11 +200,7 @@ extension IndoorLocationStep2ViewController:CLLocationManagerDelegate{
                 self.iBeaconPoint4?.distance = beacon.accuracy
             }
         }
-        
-        print("x:\(self.x) y: \(self.y) + z: \(self.z)");
-        
-        
-        
+    
         
         let iBeaconPointArray = [self.iBeaconPoint1,self.iBeaconPoint2,self.iBeaconPoint3,self.iBeaconPoint4]
         
@@ -216,8 +212,8 @@ extension IndoorLocationStep2ViewController:CLLocationManagerDelegate{
         
         sortediBeaconPointArray.remove(at: 0)
         
-        print(sortediBeaconPointArray)
         
+        print(sortediBeaconPointArray)
         
         
         var point = iBeaconPoint.calculatePoint(iBeaconPointX: sortediBeaconPointArray[0]!, iBeaconPointY: sortediBeaconPointArray[1]!, iBeaconPointZ: sortediBeaconPointArray[2]!)
@@ -226,25 +222,6 @@ extension IndoorLocationStep2ViewController:CLLocationManagerDelegate{
         point.x =  point.x / 4 * IndoorLocationStep2ViewController.kIndoorLocationViewWidth
         point.y =  point.y / 6 * IndoorLocationStep2ViewController.kIndoorLocationViewWidth
         
-        let x1 = Double(point1.x / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4)
-        let y1 = Double(point1.y / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6)
-        let x2 = Double(point2.x / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4)
-        let y2 = Double(point2.y / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6)
-        let x3 = Double(point3.x / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4)
-        let y3 = Double(point3.y / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6)
-        
-        var a = (x2 - x3) * (y * y - x * x + x1 * x1 - x2 * x2 + y1 * y1 - y2 * y2 )
-        var b = (x2 - x1)*(z * z - y * y + x2 * x2 - x3 * x3 + y2 * y2 - y3 * y3)
-        var c =  2*((x1 - x2) * (y3 - y2) - (x2 - x3) * (y2-y1))
-        
-        self.point.y = CGFloat((a + b) / c) / 6 * IndoorLocationStep2ViewController.kIndoorLocationViewWidth
-        
-        
-        a = (y2 - y3)*(y * y - x * x + x1 * x1 - x2 * x2 + y1 * y1 - y2 * y2)
-        b = (y2 - y1)*(z * z - y * y + x2 * x2 - x3 * x3 + y2 * y2 - y3 * y3)
-        c =  2*((x3 - x2) * (y1 - y2) - (y2 - y3) * (x2-x1))
-        
-        self.point.x = CGFloat((a + b) / c) / 4 * IndoorLocationStep2ViewController.kIndoorLocationViewWidth
         
         print("point \(point)")
         
