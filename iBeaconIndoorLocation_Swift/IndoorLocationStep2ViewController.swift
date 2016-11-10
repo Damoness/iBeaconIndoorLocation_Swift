@@ -36,13 +36,14 @@ class IndoorLocationStep2ViewController: BaseViewController,DeployDeviceDelegate
     var point3  = CGPoint(x: kMargin + kCircleRadius, y: (kIndoorLocationViewWidth - (kMargin + kCircleRadius)))
     var point4  = CGPoint(x: (kIndoorLocationViewWidth - (kMargin + kCircleRadius)), y: (kIndoorLocationViewWidth - (kMargin + kCircleRadius)))
     
-    var  iBeaconPoint1:iBeaconPoint?
+    var  iBeaconPoint1:iBeaconPoint? 
     var  iBeaconPoint2:iBeaconPoint?
     var  iBeaconPoint3:iBeaconPoint?
     var  iBeaconPoint4:iBeaconPoint?
     
     
     var point:CGPoint  = CGPoint(x: 100, y: 100)
+    
     var shapeLayer = CAShapeLayer()
     
     var x:Double = 0.0
@@ -62,6 +63,14 @@ class IndoorLocationStep2ViewController: BaseViewController,DeployDeviceDelegate
         
         
         
+        self.iBeaconPoint1 = iBeaconPoint(x: Double(point1.x  / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4), y: Double(point1.y  / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6))
+        self.iBeaconPoint2 = iBeaconPoint(x: Double(point2.x  / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4), y: Double(point2.y  / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6))
+        self.iBeaconPoint3 = iBeaconPoint(x: Double(point3.x / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4), y: Double(point3.y / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6))
+        self.iBeaconPoint4 = iBeaconPoint(x: Double(point4.x / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4), y: Double(point4.y  / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6))
+        
+        
+        
+        
         buttonOne.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
         
         buttonTwo.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
@@ -74,7 +83,7 @@ class IndoorLocationStep2ViewController: BaseViewController,DeployDeviceDelegate
         self.addCircle(point: point1,radius:IndoorLocationStep2ViewController.kCircleRadius)
         self.addCircle(point: point2,radius:IndoorLocationStep2ViewController.kCircleRadius)
         self.addCircle(point: point3,radius:IndoorLocationStep2ViewController.kCircleRadius)
-        
+        self.addCircle(point: point4,radius:IndoorLocationStep2ViewController.kCircleRadius)
         
         
         let beaconRegion = CLBeaconRegion(proximityUUID: UUID(uuidString: "FDA50693-A4E2-4FB1-AFCF-C6EB07647825")!, identifier: "identifier1");
@@ -115,6 +124,8 @@ class IndoorLocationStep2ViewController: BaseViewController,DeployDeviceDelegate
         return shapeLayer
         
     }
+    
+    
     
     
     
@@ -172,19 +183,48 @@ extension IndoorLocationStep2ViewController:CLLocationManagerDelegate{
             if beacon.major.intValue ==  beaconMajor1{
                 
                 self.x =  beacon.accuracy
+                self.iBeaconPoint1?.distance = beacon.accuracy
                 
             }else if beacon.major.intValue == beaconMajor2{
                 
                 self.y =  beacon.accuracy
+                self.iBeaconPoint2?.distance = beacon.accuracy
                 
             }else if beacon.major.intValue == beaconMajor3{
                 
                 self.z =  beacon.accuracy
+                self.iBeaconPoint3?.distance = beacon.accuracy
+                
+            }else if beacon.major.intValue == beaconMajor4{
+                
+                self.iBeaconPoint4?.distance = beacon.accuracy
             }
         }
         
         print("x:\(self.x) y: \(self.y) + z: \(self.z)");
         
+        
+        
+        
+        let iBeaconPointArray = [self.iBeaconPoint1,self.iBeaconPoint2,self.iBeaconPoint3,self.iBeaconPoint4]
+        
+        var sortediBeaconPointArray  =  iBeaconPointArray.sorted { (x, y) -> Bool in
+            
+            return (x?.distance)! > (y?.distance)!
+            
+        }
+        
+        sortediBeaconPointArray.remove(at: 0)
+        
+        print(sortediBeaconPointArray)
+        
+        
+        
+        var point = iBeaconPoint.calculatePoint(iBeaconPointX: sortediBeaconPointArray[0]!, iBeaconPointY: sortediBeaconPointArray[1]!, iBeaconPointZ: sortediBeaconPointArray[2]!)
+        
+        
+        point.x =  point.x / 4 * IndoorLocationStep2ViewController.kIndoorLocationViewWidth
+        point.y =  point.y / 6 * IndoorLocationStep2ViewController.kIndoorLocationViewWidth
         
         let x1 = Double(point1.x / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 4)
         let y1 = Double(point1.y / IndoorLocationStep2ViewController.kIndoorLocationViewWidth * 6)
@@ -210,13 +250,16 @@ extension IndoorLocationStep2ViewController:CLLocationManagerDelegate{
         
         shapeLayer.removeFromSuperlayer()
         
-        shapeLayer =  self.addCircle(point: self.point,radius:8)
+        shapeLayer =  self.addCircle(point: point,radius:8)
         
         print("\n")
         
         
         
     }
+    
+    
+    
     
     
 }
