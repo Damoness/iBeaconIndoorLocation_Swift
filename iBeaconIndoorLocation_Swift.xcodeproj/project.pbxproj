@@ -11,20 +11,22 @@
 		7623A30E1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7623A30C1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib */; };
 		7623A3111DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623A30F1DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift */; };
 		7623A3121DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7623A3101DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib */; };
-		76FFAC2C1D9A5B28005F4706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC2B1D9A5B28005F4706 /* AppDelegate.swift */; };
 		76FFAC2E1D9A5B28005F4706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC2D1D9A5B28005F4706 /* ViewController.swift */; };
 		76FFAC311D9A5B28005F4706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FFAC2F1D9A5B28005F4706 /* Main.storyboard */; };
 		76FFAC331D9A5B28005F4706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FFAC321D9A5B28005F4706 /* Assets.xcassets */; };
 		76FFAC361D9A5B28005F4706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FFAC341D9A5B28005F4706 /* LaunchScreen.storyboard */; };
 		76FFAC411D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC401D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftTests.swift */; };
 		76FFAC4C1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC4B1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests.swift */; };
-		76FFAC5C1D9A711C005F4706 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FFAC5B1D9A711C005F4706 /* Item.swift */; };
+		9C220DEA1DD571F500403658 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C220DE91DD571F500403658 /* SweetAlert.swift */; };
+		9C325FF41DD56BF800D542DB /* iBeaconPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C325FF11DD56BF800D542DB /* iBeaconPoint.swift */; };
+		9C325FF51DD56BF800D542DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C325FF21DD56BF800D542DB /* Item.swift */; };
+		9C325FF91DD56F7300D542DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C325FF71DD56F7300D542DB /* AppDelegate.swift */; };
+		9C325FFA1DD56F7300D542DB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C325FF81DD56F7300D542DB /* Info.plist */; };
 		9CE3D84C1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */; };
 		9CE3D84D1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */; };
 		9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */; };
 		9CE3D8521DD201E800FAB8A5 /* DeployDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */; };
 		9CE3D8531DD201E800FAB8A5 /* DeployDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */; };
-		9CFB7D0A1DD46B2D00878011 /* iBeaconPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB7D091DD46B2D00878011 /* iBeaconPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,25 +52,26 @@
 		7623A30F1DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStep1ViewController.swift; sourceTree = "<group>"; };
 		7623A3101DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndoorLocationStep1ViewController.xib; sourceTree = "<group>"; };
 		76FFAC281D9A5B28005F4706 /* iBeaconIndoorLocation_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBeaconIndoorLocation_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76FFAC2B1D9A5B28005F4706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FFAC2D1D9A5B28005F4706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76FFAC301D9A5B28005F4706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76FFAC321D9A5B28005F4706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76FFAC351D9A5B28005F4706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		76FFAC371D9A5B28005F4706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FFAC3C1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconIndoorLocation_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FFAC401D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconIndoorLocation_SwiftTests.swift; sourceTree = "<group>"; };
 		76FFAC421D9A5B28005F4706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FFAC471D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconIndoorLocation_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FFAC4B1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconIndoorLocation_SwiftUITests.swift; sourceTree = "<group>"; };
 		76FFAC4D1D9A5B28005F4706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76FFAC5B1D9A711C005F4706 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9C220DE91DD571F500403658 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		9C325FF11DD56BF800D542DB /* iBeaconPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconPoint.swift; sourceTree = "<group>"; };
+		9C325FF21DD56BF800D542DB /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9C325FF71DD56F7300D542DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C325FF81DD56F7300D542DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStep2ViewController.swift; sourceTree = "<group>"; };
 		9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndoorLocationStep2ViewController.xib; sourceTree = "<group>"; };
 		9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeployDeviceViewController.swift; sourceTree = "<group>"; };
 		9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeployDeviceViewController.xib; sourceTree = "<group>"; };
-		9CFB7D091DD46B2D00878011 /* iBeaconPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,14 +122,13 @@
 		76FFAC2A1D9A5B28005F4706 /* iBeaconIndoorLocation_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				76FFAC2B1D9A5B28005F4706 /* AppDelegate.swift */,
+				9C325FF61DD56F7300D542DB /* Other */,
+				9C325FF01DD56BF800D542DB /* Model */,
+				9C325FF31DD56BF800D542DB /* Vendors */,
 				76FFAC2D1D9A5B28005F4706 /* ViewController.swift */,
 				76FFAC2F1D9A5B28005F4706 /* Main.storyboard */,
 				76FFAC321D9A5B28005F4706 /* Assets.xcassets */,
 				76FFAC341D9A5B28005F4706 /* LaunchScreen.storyboard */,
-				76FFAC371D9A5B28005F4706 /* Info.plist */,
-				9CFB7D091DD46B2D00878011 /* iBeaconPoint.swift */,
-				76FFAC5B1D9A711C005F4706 /* Item.swift */,
 				9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */,
 				7623A30B1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift */,
 				7623A30C1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib */,
@@ -156,6 +158,40 @@
 				76FFAC4D1D9A5B28005F4706 /* Info.plist */,
 			);
 			path = iBeaconIndoorLocation_SwiftUITests;
+			sourceTree = "<group>";
+		};
+		9C220DE81DD571F500403658 /* SweetAlert */ = {
+			isa = PBXGroup;
+			children = (
+				9C220DE91DD571F500403658 /* SweetAlert.swift */,
+			);
+			path = SweetAlert;
+			sourceTree = "<group>";
+		};
+		9C325FF01DD56BF800D542DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C325FF11DD56BF800D542DB /* iBeaconPoint.swift */,
+				9C325FF21DD56BF800D542DB /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C325FF31DD56BF800D542DB /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				9C220DE81DD571F500403658 /* SweetAlert */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		9C325FF61DD56F7300D542DB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9C325FF71DD56F7300D542DB /* AppDelegate.swift */,
+				9C325FF81DD56F7300D542DB /* Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C325FFA1DD56F7300D542DB /* Info.plist in Resources */,
 				7623A3121DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib in Resources */,
 				76FFAC361D9A5B28005F4706 /* LaunchScreen.storyboard in Resources */,
 				76FFAC331D9A5B28005F4706 /* Assets.xcassets in Resources */,
@@ -299,10 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CFB7D0A1DD46B2D00878011 /* iBeaconPoint.swift in Sources */,
+				9C325FF41DD56BF800D542DB /* iBeaconPoint.swift in Sources */,
+				9C220DEA1DD571F500403658 /* SweetAlert.swift in Sources */,
+				9C325FF51DD56BF800D542DB /* Item.swift in Sources */,
 				76FFAC2E1D9A5B28005F4706 /* ViewController.swift in Sources */,
-				76FFAC5C1D9A711C005F4706 /* Item.swift in Sources */,
-				76FFAC2C1D9A5B28005F4706 /* AppDelegate.swift in Sources */,
+				9C325FF91DD56F7300D542DB /* AppDelegate.swift in Sources */,
 				9CE3D84C1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift in Sources */,
 				7623A3111DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift in Sources */,
 				9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */,
@@ -458,7 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZN7KJ4D45E;
-				INFOPLIST_FILE = iBeaconIndoorLocation_Swift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iBeaconIndoorLocation_Swift/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ditiy.iBeaconIndoorLocation-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,7 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZN7KJ4D45E;
-				INFOPLIST_FILE = iBeaconIndoorLocation_Swift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iBeaconIndoorLocation_Swift/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ditiy.iBeaconIndoorLocation-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";

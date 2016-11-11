@@ -56,6 +56,8 @@ class DeployDeviceViewController: UIViewController {
     @IBAction func bindDeviceAction(_ sender: UIButton) {
         
         
+          SweetAlert().showAlert("绑定成功")
+        
         if let beacon = self.selectedBeacon {
             
             if beacon.accuracy < 0.3 {
@@ -65,6 +67,8 @@ class DeployDeviceViewController: UIViewController {
                 
                 self.delegate?.didBindDevice(beacon:beacon)
                 
+                
+              
                 
             }
             
