@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622E2CBB7D7C30946C72C964 /* Pods_iBeaconIndoorLocation_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4EFF5E300F4A2072CD77EF /* Pods_iBeaconIndoorLocation_Swift.framework */; };
 		7623A30D1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623A30B1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift */; };
 		7623A30E1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7623A30C1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib */; };
 		7623A3111DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7623A30F1DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift */; };
@@ -21,7 +22,6 @@
 		9C325FF41DD56BF800D542DB /* iBeaconPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C325FF11DD56BF800D542DB /* iBeaconPoint.swift */; };
 		9C325FF51DD56BF800D542DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C325FF21DD56BF800D542DB /* Item.swift */; };
 		9C325FF91DD56F7300D542DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C325FF71DD56F7300D542DB /* AppDelegate.swift */; };
-		9C325FFA1DD56F7300D542DB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C325FF81DD56F7300D542DB /* Info.plist */; };
 		9CE3D84C1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84A1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.swift */; };
 		9CE3D84D1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3D84B1DD1D57300FAB8A5 /* IndoorLocationStep2ViewController.xib */; };
 		9CE3D84F1DD1DC6E00FAB8A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */; };
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B56D0CF2C0DEB9A6A7D67F5 /* Pods-iBeaconIndoorLocation_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeaconIndoorLocation_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iBeaconIndoorLocation_Swift/Pods-iBeaconIndoorLocation_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		7623A30B1DC1EBAE00602F65 /* IndoorLocationStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStartViewController.swift; sourceTree = "<group>"; };
 		7623A30C1DC1EBAE00602F65 /* IndoorLocationStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndoorLocationStartViewController.xib; sourceTree = "<group>"; };
 		7623A30F1DC1EC5300602F65 /* IndoorLocationStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndoorLocationStep1ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +73,8 @@
 		9CE3D84E1DD1DC6E00FAB8A5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9CE3D8501DD201E800FAB8A5 /* DeployDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeployDeviceViewController.swift; sourceTree = "<group>"; };
 		9CE3D8511DD201E800FAB8A5 /* DeployDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeployDeviceViewController.xib; sourceTree = "<group>"; };
+		F5123980C111765B286C1BF3 /* Pods-iBeaconIndoorLocation_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iBeaconIndoorLocation_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iBeaconIndoorLocation_Swift/Pods-iBeaconIndoorLocation_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		FE4EFF5E300F4A2072CD77EF /* Pods_iBeaconIndoorLocation_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iBeaconIndoorLocation_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622E2CBB7D7C30946C72C964 /* Pods_iBeaconIndoorLocation_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0C171A819B72D2D97E3C71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B56D0CF2C0DEB9A6A7D67F5 /* Pods-iBeaconIndoorLocation_Swift.debug.xcconfig */,
+				F5123980C111765B286C1BF3 /* Pods-iBeaconIndoorLocation_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		76FFAC1F1D9A5B28005F4706 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,8 @@
 				76FFAC3F1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftTests */,
 				76FFAC4A1D9A5B28005F4706 /* iBeaconIndoorLocation_SwiftUITests */,
 				76FFAC291D9A5B28005F4706 /* Products */,
+				0F0C171A819B72D2D97E3C71 /* Pods */,
+				A4EA079FECC2CD40C8B39FE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +209,14 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		A4EA079FECC2CD40C8B39FE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EFF5E300F4A2072CD77EF /* Pods_iBeaconIndoorLocation_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76FFAC501D9A5B28005F4706 /* Build configuration list for PBXNativeTarget "iBeaconIndoorLocation_Swift" */;
 			buildPhases = (
+				6CC4102726687701263CF00D /* Check Pods Manifest.lock */,
 				76FFAC241D9A5B28005F4706 /* Sources */,
 				76FFAC251D9A5B28005F4706 /* Frameworks */,
 				76FFAC261D9A5B28005F4706 /* Resources */,
+				F8CDEC9BCEFDFCE370C66A8D /* Embed Pods Frameworks */,
+				AEF95516DC4EDF5D3E39F809 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,7 +283,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = ditiy;
 				TargetAttributes = {
 					76FFAC271D9A5B28005F4706 = {
@@ -304,7 +330,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C325FFA1DD56F7300D542DB /* Info.plist in Resources */,
 				7623A3121DC1EC5300602F65 /* IndoorLocationStep1ViewController.xib in Resources */,
 				76FFAC361D9A5B28005F4706 /* LaunchScreen.storyboard in Resources */,
 				76FFAC331D9A5B28005F4706 /* Assets.xcassets in Resources */,
@@ -330,6 +355,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CC4102726687701263CF00D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF95516DC4EDF5D3E39F809 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBeaconIndoorLocation_Swift/Pods-iBeaconIndoorLocation_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8CDEC9BCEFDFCE370C66A8D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iBeaconIndoorLocation_Swift/Pods-iBeaconIndoorLocation_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76FFAC241D9A5B28005F4706 /* Sources */ = {
@@ -418,6 +491,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -467,6 +541,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -493,6 +568,7 @@
 		};
 		76FFAC511D9A5B28005F4706 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B56D0CF2C0DEB9A6A7D67F5 /* Pods-iBeaconIndoorLocation_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZN7KJ4D45E;
@@ -507,6 +583,7 @@
 		};
 		76FFAC521D9A5B28005F4706 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5123980C111765B286C1BF3 /* Pods-iBeaconIndoorLocation_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZN7KJ4D45E;

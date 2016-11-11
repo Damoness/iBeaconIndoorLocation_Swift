@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-
+import MBProgressHUD
 
 protocol DeployDeviceDelegate:NSObjectProtocol {
     
@@ -49,6 +49,9 @@ class DeployDeviceViewController: UIViewController {
         self.locationManager.startRangingBeacons(in: regionBeacon)
         
         
+        
+        
+        
     }
     
     
@@ -56,7 +59,10 @@ class DeployDeviceViewController: UIViewController {
     @IBAction func bindDeviceAction(_ sender: UIButton) {
         
         
-          SweetAlert().showAlert("绑定成功")
+          //SweetAlert().showAlert("绑定成功")
+        
+        //MBProgressHUD.showAdded(to: self.view, animated: true)
+        
         
         if let beacon = self.selectedBeacon {
             
@@ -83,6 +89,8 @@ class DeployDeviceViewController: UIViewController {
         
     
         super.viewDidDisappear(animated)
+        
+        
         
         
         
