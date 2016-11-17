@@ -31,6 +31,11 @@ class IndoorLocationStep2ViewController: BaseViewController,DeployDeviceDelegate
     var beaconMajor3:Int? = 10001
     var beaconMajor4:Int? = 10019
     
+//    var beaconMajor1:Int? = 11001
+//    var beaconMajor2:Int? = 11002
+//    var beaconMajor3:Int? = 11004
+//    var beaconMajor4:Int? = 11003
+    
     var point1  = CGPoint(x: kMargin + kCircleRadius , y: kMargin + kCircleRadius)
     var point2  = CGPoint(x: (kIndoorLocationViewWidth - (kMargin + kCircleRadius)) , y: kMargin + kCircleRadius)
     var point3  = CGPoint(x: kMargin + kCircleRadius, y: (kIndoorLocationViewWidth - (kMargin + kCircleRadius)))
